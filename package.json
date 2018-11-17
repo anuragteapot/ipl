@@ -49,5 +49,20 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "description": "Data visualizations using Vue.js and Backbone.js.",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anu1601CS/ipl.git"
+  },
+  "keywords": [
+    "Visualization"
+  ],
+  "author": "Anurag Kumar (anu1601cs)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anu1601CS/ipl/issues"
+  },
+  "homepage": "https://github.com/Anu1601CS/ipl#readme"
 }
