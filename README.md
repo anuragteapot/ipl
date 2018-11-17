@@ -1,5 +1,5 @@
 # ipl
-Data visualizations using Vue.js and Backbone.js.
+Data visualizations using Vue.js
 
 ## Project setup
 ```
