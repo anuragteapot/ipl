@@ -28,6 +28,9 @@
 body,html {
   width: 100%;
   height: 100%;
-  background-color: #f9f9f9!important;
+  background-color: #eceded!important;
+}
+.card{
+      box-shadow: 0 2px 10px 0 rgba(0,0,0,.15);
 }
 </style>
