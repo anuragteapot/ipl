@@ -10,12 +10,38 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <b-container class="bv-example-row">
-    <router-view/>
-    </b-container>
+    <div class="main-container">
+      <b-container class="bv-example-row">
+        <router-view/>
+      </b-container>
+    </div>
     <vue-progress-bar></vue-progress-bar>
   </div>
 </template>
+
+<script>
+/* eslint-disable */
+export default {
+  mounted () {
+    this.$Progress.finish()
+  },
+  created () {
+    this.$Progress.start()
+    this.$router.beforeEach((to, from, next) => {
+      if (to.meta.progress !== undefined) {
+        let meta = to.meta.progress
+        this.$Progress.parseMeta(meta)
+      }
+      this.$Progress.start()
+      next()
+    })
+    this.$router.afterEach((to, from) => {
+      this.$Progress.finish()
+    })
+  }
+}
+/* eslint-enable */
+</script>
 
 <style>
 #app {
@@ -34,10 +60,14 @@ body,html {
 }
 
 .card {
-      box-shadow: 0 2px 10px 0 rgba(0,0,0,.15);
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.15);
 }
 
-.container {
-  max-width: 1300px!important;
+.main-container {
+  margin: 10px;
 }
+
+/* .container {
+  max-width: 1300px!important;
+} */
 </style>

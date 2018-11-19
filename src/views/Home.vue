@@ -16,7 +16,5 @@ export default {
 </script>
 
 <style>
-.main {
-  margin: 10px;
-}
+
 </style>
