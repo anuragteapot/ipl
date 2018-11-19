@@ -1,30 +1,28 @@
 <template>
-  <b-container class="bv-example-row">
-    <b-row class="justify-content-md-center">
-      <b-col xs="12" sm="12" md="4" lg="4">
-        <div class="card">
-          <div class="card-body">
-            <b-alert show variant="primary">Primary Alert</b-alert>
-          </div>
+  <b-row class="justify-content-md-center">
+    <b-col xs="12" sm="12" md="4" lg="4">
+      <div class="card">
+        <div class="card-body">
+          <b-alert show variant="primary">Primary Alert</b-alert>
         </div>
-        <br>
-      </b-col>
-      <b-col  xs="12" sm="12" md="8" lg="8">
-        <div class="card">
-          <div class="card-header">Bollowing Status</div>
-            <div class="card-body">
-              <canvas ref="chart"></canvas>
-            </div>
+      </div>
+      <br>
+    </b-col>
+    <b-col  xs="12" sm="12" md="8" lg="8">
+      <div class="card">
+        <div class="card-header">Bollowing Status</div>
+        <div class="card-body">
+          <canvas ref="chart"></canvas>
         </div>
-      </b-col>
-    </b-row>
-  </b-container>
+      </div>
+    </b-col>
+  </b-row>
 </template>
 
 <script>
 import Chart from 'chart.js';
 export default {
-  name: 'Home',
+  name: 'Main',
   props: {
     msg:{
       type: String

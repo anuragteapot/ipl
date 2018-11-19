@@ -1,22 +1,20 @@
 <template>
   <section class="main">
-    <Home />
+    <MainSection />
   </section>
 </template>
 
 <script>
-// @ is an alias to /src
-import Home from '@/components/Main.vue'
+import MainSection from '@/components/Main.vue'
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
-    Home
+    MainSection
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .main {
   margin: 10px;

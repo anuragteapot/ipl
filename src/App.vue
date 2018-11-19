@@ -10,7 +10,9 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
+    <b-container class="bv-example-row">
     <router-view/>
+    </b-container>
     <vue-progress-bar></vue-progress-bar>
   </div>
 </template>
@@ -30,7 +32,12 @@ body,html {
   height: 100%;
   background-color: #eceded!important;
 }
-.card{
+
+.card {
       box-shadow: 0 2px 10px 0 rgba(0,0,0,.15);
+}
+
+.container {
+  max-width: 1300px!important;
 }
 </style>
