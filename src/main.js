@@ -4,12 +4,12 @@ import router from './router'
 import store from './store'
 import BootstrapVue from 'bootstrap-vue'
 import VueProgressBar from 'vue-progressbar'
-import LineChart from './components/Chart/Line'
-import DoughnutChart from './components/Chart/Doughnut'
-import Piechart from './components/Chart/Pie'
-import Barchart from './components/Chart/Bar'
-import HorizontalBarchart from './components/Chart/HorizontalBar'
-import SunBrust from './components/Chart/SunBrust'
+import LineChart from './components/chart/Line'
+import DoughnutChart from './components/chart/Doughnut'
+import Piechart from './components/chart/Pie'
+import Barchart from './components/chart/Bar'
+import HorizontalBarchart from './components/chart/HorizontalBar'
+import SunBrust from './components/chart/SunBrust'
 
 // Add the plugins
 Vue.use(BootstrapVue)

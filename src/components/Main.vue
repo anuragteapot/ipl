@@ -3,7 +3,7 @@
     <b-col xs="12" sm="12" md="4" lg="4">
       <div class="card">
         <div class="card-body">
-          <b-alert show variant="primary">Primary Alert</b-alert>
+          <b-alert show variant="primary">Homepage</b-alert>
         </div>
       </div>
       <br>

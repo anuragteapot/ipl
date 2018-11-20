@@ -6,7 +6,7 @@
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
           <b-nav-item ><router-link to="/" >Home </router-link></b-nav-item>
-          <b-nav-item ><router-link to="/about">About</router-link></b-nav-item>
+          <b-nav-item ><router-link to="/matches">Matches</router-link></b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -64,10 +64,6 @@ body,html {
 }
 
 .main-container {
-  margin: 10px;
+  margin-top: 10px;
 }
-
-/* .container {
-  max-width: 1300px!important;
-} */
 </style>
