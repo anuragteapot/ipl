@@ -1,19 +1,11 @@
 <template>
   <div class="about">
     <b-row class="justify-content-md-center">
-      <b-col xs="12" sm="12" md="4" lg="4">
+      <b-col  xs="12" sm="12" md="12" lg="12">
         <div class="card">
+          <div class="card-header">sunburst</div>
           <div class="card-body">
-            <b-alert show variant="primary">Primary Alert</b-alert>
-          </div>
-        </div>
-        <br>
-      </b-col>
-      <b-col  xs="12" sm="12" md="8" lg="8">
-        <div class="card">
-          <div class="card-header">Bollowing Status</div>
-          <div class="card-body">
-            <line-chart ></line-chart>
+            <sunburst-chart v-bind:sunburstdata="render()"></sunburst-chart>
           </div>
         </div>
       </b-col>
@@ -22,12 +14,25 @@
 </template>
 
 <script>
-    export default {
-        name: 'app',
-        mounted() {
+import jsondata from '@/assets/data/json/data.json';
 
-        }
+export default {
+  name: 'app',
+  data() {
+    return {
+      checks: jsondata,
+      name:'anurag'
     }
+  },
+  mounted() {
+
+  },
+  methods: {
+    render() {
+      return jsondata;
+    }
+  }
+}
 </script>
 
 <style>

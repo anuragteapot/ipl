@@ -9,6 +9,7 @@ import DoughnutChart from './components/Chart/Doughnut'
 import Piechart from './components/Chart/Pie'
 import Barchart from './components/Chart/Bar'
 import HorizontalBarchart from './components/Chart/HorizontalBar'
+import SunBrust from './components/Chart/SunBrust'
 
 // Add the plugins
 Vue.use(BootstrapVue)
@@ -19,11 +20,12 @@ Vue.use(VueProgressBar, {
 })
 
 // Load components
-Vue.component('line-chart', LineChart);
-Vue.component('doughnut-chart', DoughnutChart);
-Vue.component('pie-chart', Piechart);
-Vue.component('bar-chart', Barchart);
-Vue.component('horizontalbar-chart', HorizontalBarchart);
+Vue.component('line-chart', LineChart)
+Vue.component('doughnut-chart', DoughnutChart)
+Vue.component('pie-chart', Piechart)
+Vue.component('bar-chart', Barchart)
+Vue.component('horizontalbar-chart', HorizontalBarchart)
+Vue.component('sunburst-chart', SunBrust)
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
