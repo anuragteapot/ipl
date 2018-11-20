@@ -1,12 +1,12 @@
 <template>
-  <sunburst class="sunburst" :data="data"  :colorScheme="colorScheme" :inAnimationDuration="inAnimationDuration" :outAnimationDuration="outAnimationDuration">
+  <sunburst class="sunburst" :data="data"  :colorScheme="colorScheme">
     <!-- Add behaviors -->
     <template slot-scope="{ nodes, actions }">
       <highlightOnHover :nodes="nodes" :actions="actions" />
       <zoomOnClick :nodes="nodes" :actions="actions" />
     </template>
     <!-- Add bottom legend -->
-    <breadcrumbTrail :item-width="100" slot="legend" slot-scope="{ nodes, colorGetter, width }" :current="nodes.mouseOver" :root="nodes.root" :colorGetter="colorGetter" :from="nodes.clicked" :width="width" />
+    <breadcrumbTrail :item-width="125" slot="legend" slot-scope="{ nodes, colorGetter, width }" :current="nodes.mouseOver" :root="nodes.root" :colorGetter="colorGetter" :from="nodes.clicked" :width="width" />
   </sunburst>
 </template>
 
@@ -15,7 +15,7 @@ import "vue-d3-sunburst/dist/vue-d3-sunburst.css";
 import { breadcrumbTrail, highlightOnHover, sunburst, zoomOnClick } from 'vue-d3-sunburst';
 
 export default {
-  name: 'PieChart',
+  name: 'sun',
   props: {
     sunburstdata : {
       type: Object,
@@ -31,9 +31,7 @@ export default {
   data() {
     return {
       data: this.sunburstdata,
-      colorScheme: 'schemeAccent',
-      inAnimationDuration: 100,
-      outAnimationDuration: 1000
+      colorScheme: 'schemeSet3'
     }
   },
   methods: {
@@ -44,6 +42,11 @@ export default {
 <style scoped>
 
 .sunburst {
-  height: 500px;
+  height: 400px;
 }
+
+.sequence {
+  margin-top: 50px;
+}
+
 </style>

@@ -1,5 +1,3 @@
-import TotalHits from '../assets/data/json/sunBurst.json'
-
 /**
 * Api class for communication with the server
 */
@@ -17,9 +15,7 @@ class Api {
   * @returns {json object}
   */
   getTeams() {
-
-    TotalHits
-    return TotalHits;
+    
   }
 }
 

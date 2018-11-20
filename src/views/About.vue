@@ -3,7 +3,7 @@
     <b-row class="justify-content-md-center">
       <b-col  xs="12" sm="12" md="12" lg="12">
         <div class="card">
-          <div class="card-header">sunburst</div>
+          <div class="card-header">Total Hits for each team</div>
           <div class="card-body">
             <sunburst-chart v-bind:sunburstdata="render()"></sunburst-chart>
           </div>
