@@ -1,26 +1,34 @@
 <template>
-  <b-row class="justify-content-md-center">
-    <b-col xs="12" sm="12" md="4" lg="4">
-      <div class="card">
-        <div class="card-body">
-          <b-alert show variant="primary">Homepage</b-alert>
+  <div class="submain">
+    <b-row class="justify-content-md-center">
+      <b-col>
+        <div class="card">
+          <div class="card-header">Played matches on season</div>
+          <div class="card-body">
+            <canvas ref="chart"></canvas>
+          </div>
         </div>
-      </div>
-      <br>
-    </b-col>
-    <b-col  xs="12" sm="12" md="8" lg="8">
-      <div class="card">
-        <div class="card-header">Bollowing Status</div>
-        <div class="card-body">
-          <canvas ref="chart"></canvas>
+      </b-col>
+    </b-row>
+    <br>
+    <b-row class="justify-content-md-center">
+      <b-col>
+        <div class="card">
+          <div class="card-header">Number of matches played at particular ground.</div>
+          <div class="card-body">
+            <canvas ref="chart2"></canvas>
+          </div>
         </div>
-      </div>
-    </b-col>
-  </b-row>
+      </b-col>
+    </b-row>
+  </div>
 </template>
 
 <script>
 import Chart from 'chart.js';
+import seasonmatches from '@/assets/data/json/seasonmatches.json';
+// import timesplayedgound from '@/assets/data/json/timesplayedgound.json';
+
 export default {
   name: 'Main',
   props: {
@@ -31,31 +39,43 @@ export default {
       type: String
     }
   },
+  methods:{
+    getData() {
+      var arr = {
+        'data':[],
+        'labels':[]
+      };
+
+      seasonmatches.forEach(matches => {
+        arr['data'].push(matches['total'])
+        arr['labels'].push(matches['season'])
+      })
+
+      return arr;
+    }
+  },
   mounted() {
     var chart = this.$refs.chart;
     var ctx = chart.getContext("2d");
+    var d = this.getData();
+
     new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: d['labels'],
         datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
+          label: '# of matches',
+          data: d['data'],
           backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
-          ],
-          borderColor: [
-            'rgba(255,99,132,1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)'
+            'rgba(255, 99, 132)',
+            'rgba(54, 162, 235)',
+            'rgba(255, 206, 86)',
+            'rgba(75, 192, 192)',
+            'rgba(153, 102, 255)',
+            'rgba(255, 159, 64)',
+            'rgba(117, 59, 120)',
+            'rgba(26, 163, 255)',
+            'rgba(255, 26, 26)'
           ],
           borderWidth: 1
         }]
