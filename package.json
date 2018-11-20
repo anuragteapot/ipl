@@ -32,5 +32,24 @@
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "vue-template-compiler": "^2.5.17"
-  }
+  },
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anu1601CS/ipl.git"
+  },
+  "keywords": [
+    "Visualizer"
+  ],
+  "author": "Anurag Kumar (anu1601cs)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anu1601CS/ipl/issues"
+  },
+  "homepage": "https://github.com/Anu1601CS/ipl#readme"
 }
