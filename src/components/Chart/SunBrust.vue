@@ -5,14 +5,17 @@
       <highlightOnHover :nodes="nodes" :actions="actions" />
       <zoomOnClick :nodes="nodes" :actions="actions" />
     </template>
+
+    <nodeInfoDisplayer class="mobile" slot="top" slot-scope="{ nodes }" :current="nodes.mouseOver" :root="nodes.root" description="" />
+
     <!-- Add bottom legend -->
-    <breadcrumbTrail :item-width="125" slot="legend" slot-scope="{ nodes, colorGetter, width }" :current="nodes.mouseOver" :root="nodes.root" :colorGetter="colorGetter" :from="nodes.clicked" :width="width" />
+    <breadcrumbTrail :item-width="130" slot="legend" slot-scope="{ nodes, colorGetter, width }" :current="nodes.mouseOver" :root="nodes.root" :colorGetter="colorGetter" :from="nodes.clicked" :width="width" />
   </sunburst>
 </template>
 
 <script>
 import "vue-d3-sunburst/dist/vue-d3-sunburst.css";
-import { breadcrumbTrail, highlightOnHover, sunburst, zoomOnClick } from 'vue-d3-sunburst';
+import { breadcrumbTrail, highlightOnHover,  nodeInfoDisplayer, sunburst, zoomOnClick } from 'vue-d3-sunburst';
 
 export default {
   name: 'sun',
@@ -26,7 +29,8 @@ export default {
     breadcrumbTrail,
     highlightOnHover,
     sunburst,
-    zoomOnClick
+    zoomOnClick,
+    nodeInfoDisplayer
   },
   data() {
     return {
@@ -47,6 +51,16 @@ export default {
 
 .sequence {
   margin-top: 50px;
+  overflow-y: auto;
 }
 
+@media only screen and (max-width: 600px) {
+    .sequence {
+        display: none;
+    }
+
+    .sunburst {
+      height: 300px;
+    }
+}
 </style>
