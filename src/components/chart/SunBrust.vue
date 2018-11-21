@@ -1,5 +1,5 @@
 <template>
-  <sunburst class="sunburst" :data="data"  :colorScheme="colorScheme">
+  <sunburst class="sunburst" :data="data"  :colorScheme="colorScheme" :inAnimationDuration="inAnimationDuration" :outAnimationDuration="outAnimationDuration">
     <!-- Add behaviors -->
     <template slot-scope="{ nodes, actions }">
       <highlightOnHover :nodes="nodes" :actions="actions" />
@@ -35,7 +35,9 @@ export default {
   data() {
     return {
       data: this.sunburstdata,
-      colorScheme: 'schemeSet3'
+      colorScheme: 'schemeSet3',
+      inAnimationDuration: 0,
+      outAnimationDuration: 0
     }
   },
   methods: {
