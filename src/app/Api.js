@@ -27,7 +27,7 @@ class Api {
   * @returns {number}
   */
   getMaxOfArray(array) {
-      return Math.max.apply(null, array)
+    return Math.max.apply(null, array)
   }
 
   /**
@@ -35,7 +35,43 @@ class Api {
   * @returns {number}
   */
   getMinOfArray(array) {
-      return Math.min.apply(null, array)
+    return Math.min.apply(null, array)
+  }
+
+  /**
+  * Prepare data for chart.
+  * @returns {number}
+  */
+  prepareData(chartData) {
+
+    var arr = {
+      'data': {
+        'labels': chartData['labels'],
+        'datasets': [
+          {
+            'backgroundColor': [
+              'rgba(255, 99, 132)',
+              'rgba(54, 162, 235)',
+              'rgba(255, 206, 86)',
+              'rgba(75, 192, 192)',
+              'rgba(153, 102, 255)',
+              'rgba(255, 159, 64)',
+              'rgba(117, 59, 120)',
+              'rgba(26, 163, 255)',
+              'rgba(255, 26, 26)',
+              'rgba(65, 5, 111)',
+              '#28a745',
+              '#6610f2',
+              '#17a2b8'
+            ],
+            'data': chartData['data']
+          }
+        ]
+      },
+      'options':{responsive: true, maintainAspectRatio: false}
+    }
+
+    return arr;
   }
 }
 

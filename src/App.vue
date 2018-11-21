@@ -11,8 +11,10 @@
       </b-collapse>
     </b-navbar>
     <div class="main-container">
-      <b-container class="bv-example-row">
-        <router-view/>
+      <b-container fluid>
+        <div class="clearfix">
+          <router-view/>
+        </div>
       </b-container>
     </div>
     <vue-progress-bar></vue-progress-bar>

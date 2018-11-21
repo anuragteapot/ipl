@@ -19,7 +19,7 @@ export default {
   mixins: [VueCharts.mixins.reactiveProp],
   extends: VueCharts.Bar,
   mounted () {
-    this.renderChart(this.chartdata, this.options)
+    this.renderChart(this.chartData, this.options)
   }
 }
 </script>

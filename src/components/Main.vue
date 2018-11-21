@@ -1,12 +1,13 @@
 <template>
   <div class="submain">
     <b-row class="justify-content-md-center">
-      <b-col>
+      <b-col class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <div class="card">
-          <div class="card-header">Played matches on season</div>
+            <div class="card-header">Number</div>
           <div class="card-body">
             <canvas ref="chart"></canvas>
           </div>
+          <div class="card-footer">Footer</div>
         </div>
       </b-col>
     </b-row>
@@ -16,7 +17,6 @@
 <script>
 import Chart from 'chart.js';
 import seasonmatches from '@/assets/data/json/seasonmatches.json';
-// import timesplayedgound from '@/assets/data/json/timesplayedgound.json';
 
 export default {
   name: 'Main',
