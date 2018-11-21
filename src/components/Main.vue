@@ -10,17 +10,6 @@
         </div>
       </b-col>
     </b-row>
-    <br>
-    <b-row class="justify-content-md-center">
-      <b-col>
-        <div class="card">
-          <div class="card-header">Number of matches played at particular ground.</div>
-          <div class="card-body">
-            <canvas ref="chart2"></canvas>
-          </div>
-        </div>
-      </b-col>
-    </b-row>
   </div>
 </template>
 
@@ -52,44 +41,47 @@ export default {
       })
 
       return arr;
+    },
+    renderChart() {
+      var chart = this.$refs.chart;
+      var ctx = chart.getContext("2d")
+      var d = this.getData();
+
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: d['labels'],
+          datasets: [{
+            label: '# of matches',
+            data: d['data'],
+            backgroundColor: [
+              'rgba(255, 99, 132)',
+              'rgba(54, 162, 235)',
+              'rgba(255, 206, 86)',
+              'rgba(75, 192, 192)',
+              'rgba(153, 102, 255)',
+              'rgba(255, 159, 64)',
+              'rgba(117, 59, 120)',
+              'rgba(26, 163, 255)',
+              'rgba(255, 26, 26)'
+            ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true
+              }
+            }]
+          }
+        }
+      })
     }
   },
   mounted() {
-    var chart = this.$refs.chart;
-    var ctx = chart.getContext("2d");
-    var d = this.getData();
-
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: d['labels'],
-        datasets: [{
-          label: '# of matches',
-          data: d['data'],
-          backgroundColor: [
-            'rgba(255, 99, 132)',
-            'rgba(54, 162, 235)',
-            'rgba(255, 206, 86)',
-            'rgba(75, 192, 192)',
-            'rgba(153, 102, 255)',
-            'rgba(255, 159, 64)',
-            'rgba(117, 59, 120)',
-            'rgba(26, 163, 255)',
-            'rgba(255, 26, 26)'
-          ],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true
-            }
-          }]
-        }
-      }
-    });
+    this.renderChart()
   }
 }
 </script>

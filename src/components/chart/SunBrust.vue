@@ -6,7 +6,7 @@
       <zoomOnClick :nodes="nodes" :actions="actions" />
     </template>
 
-    <nodeInfoDisplayer class="mobile" slot="top" slot-scope="{ nodes }" :current="nodes.mouseOver" :root="nodes.root" description="" />
+    <nodeInfoDisplayer slot="top" slot-scope="{ nodes }" :current="nodes.mouseOver" :root="nodes.root" description="" />
 
     <!-- Add bottom legend -->
     <breadcrumbTrail :item-width="130" slot="legend" slot-scope="{ nodes, colorGetter, width }" :current="nodes.mouseOver" :root="nodes.root" :colorGetter="colorGetter" :from="nodes.clicked" :width="width" />

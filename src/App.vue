@@ -65,5 +65,6 @@ body,html {
 
 .main-container {
   margin-top: 10px;
+  margin-bottom: 50px;
 }
 </style>
