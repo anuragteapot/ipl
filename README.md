@@ -1,4 +1,4 @@
-# ipl
+# Ipl Data Visualization
 Data visualizations using Vue.js
 
 
