@@ -3,11 +3,11 @@
     <b-row>
       <b-col class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <div class="card">
-            <div class="card-header">Number</div>
+            <div class="card-header">Top man of the matches</div>
           <div class="card-body">
             <doughnut-chart :chartData="chartData()" :options="options()"></doughnut-chart>
           </div>
-          <div class="card-footer">Footer</div>
+          <div class="card-footer"></div>
         </div>
         <br>
       </b-col>
@@ -20,7 +20,7 @@
 
 <script>
 import Api from '@/app/Api';
-import seasonmatches from '@/assets/data/json/manOfMatch.json';
+import manOfMatch from '@/assets/data/manOfMatch.json';
 import TotalScore from '@/components/TotalScore.vue'
 
 export default {
@@ -48,7 +48,7 @@ export default {
         'labels':[]
       };
 
-      seasonmatches.forEach(matches => {
+      manOfMatch.forEach(matches => {
         arr['data'].push(matches['total'])
         arr['labels'].push(matches['labels'])
       })

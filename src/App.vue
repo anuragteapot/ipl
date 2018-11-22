@@ -5,8 +5,9 @@
       <b-navbar-brand href="#">IPL Data</b-navbar-brand>
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
-          <b-nav-item :to="{ path: '/' }" >Home</b-nav-item>
-          <b-nav-item :to="{ path: '/matches' }" >Matches</b-nav-item>
+          <b-nav-item :to="{ path: '/' }" exact>Home</b-nav-item>
+          <b-nav-item :to="{ path: '/matches' }" >Top</b-nav-item>
+          <b-nav-item :to="{ path: '/new' }" >New</b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto">
           <b-nav-item class="active" href="https://github.com/Anu1601CS/ipl" target="_blank">Github</b-nav-item>
@@ -73,9 +74,9 @@ body,html {
   margin-bottom: 50px;
 }
 .nav-link{
-  color: #20c997!important;
+  color: white!important;
 }
 .active {
-  color: white!important;
+  color: #20c997!important;
 }
 </style>

@@ -3,14 +3,14 @@
     <b-row class="justify-content-md-center">
       <b-col class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <div class="card">
-          <div class="card-header">Wins and losses each session for teams</div>
+          <div class="card-header">Wins and losses across each season for each teams</div>
           <div class="card-body">
             <label for="select">Select Teams</label>
             <b-form-select id="select" v-model="selected" :change="updateData"  :options="option" class="mb-3" size="sm" />
             <strong>{{ selected }}</strong>
             <line-chart :chartData="chartData()" :options="options()"></line-chart>
           </div>
-          <div class="card-footer">Footer</div>
+          <div class="card-footer">r</div>
         </div>
       </b-col>
     </b-row>
@@ -19,7 +19,7 @@
 
 <script>
 import Api from '@/app/Api';
-import winLosses from '@/assets/data/json/winLosses.json';
+import winLosses from '@/assets/data/winLosses.json';
 
 export default {
   name: 'WinLoss',

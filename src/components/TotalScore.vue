@@ -1,23 +1,23 @@
 <template>
   <div class="submain">
     <div class="card">
-      <div class="card-header">Total Score by all teams</div>
+      <div class="card-header">Total Score by all teams across each season</div>
       <div class="card-body" >
         <div class="chart-container">
           <bar-chart :chartData="chartData()" :options="options()"></bar-chart>
         </div>
       </div>
-      <div class="card-footer">Total Score by all teams</div>
+      <div class="card-footer"></div>
     </div>
   </div>
 </template>
 
 <script>
-import totalRuns from '@/assets/data/json/totalRuns.json';
 import Api from '@/app/Api';
+import totalScore from '@/assets/data/totalScore.json';
 
 export default {
-  name: 'Main',
+  name: 'totalScore',
   data() {
     return {
       d:''
@@ -38,7 +38,7 @@ export default {
         'labels':[]
       };
 
-      totalRuns.forEach(matches => {
+      totalScore.forEach(matches => {
         arr['data'].push(matches['total'])
         arr['labels'].push(matches['year'])
       })

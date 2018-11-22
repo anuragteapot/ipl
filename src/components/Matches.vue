@@ -7,7 +7,7 @@
           <div class="card-body">
             <sunburst-chart v-bind:sunburstdata="render()"></sunburst-chart>
           </div>
-          <div class="card-footer">Footer</div>
+          <div class="card-footer"></div>
         </div>
       </b-col>
     </b-row>
@@ -15,10 +15,10 @@
 </template>
 
 <script>
-import jsondata from '@/assets/data/json/sunBurst.json';
+import jsondata from '@/assets/data/sunBurst.json';
 
 export default {
-  name: 'app',
+  name: 'matches',
   data() {
     return {
       checks: jsondata,

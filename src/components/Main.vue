@@ -3,11 +3,11 @@
     <b-row>
       <b-col class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <div class="card">
-            <div class="card-header">Number</div>
+            <div class="card-header">Number of matches played across each season</div>
           <div class="card-body">
             <bar-chart :chartData="chartData()" :options="options()"></bar-chart>
           </div>
-          <div class="card-footer">Footer</div>
+          <div class="card-footer"></div>
         </div>
         <br>
       </b-col>
@@ -19,15 +19,14 @@
 </template>
 
 <script>
-import seasonmatches from '@/assets/data/json/seasonmatches.json';
-import MostPlayedGround from '@/components/MostPlayedGround.vue'
 import Api from '@/app/Api';
+import seasonmatches from '@/assets/data/seasonmatches.json';
+import MostPlayedGround from '@/components/MostPlayedGround.vue'
 
 export default {
   name: 'Main',
   data() {
     return {
-      d:''
     }
   },
   components: {

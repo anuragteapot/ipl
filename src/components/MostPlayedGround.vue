@@ -6,16 +6,16 @@
         <polar-chart :chartData="chartData()" :options="options()"></polar-chart>
       </div>
     </div>
-    <div class="card-footer">Most Played ground</div>
+    <div class="card-footer"></div>
   </div>
 </template>
 
 <script>
-import seasonmatches from '@/assets/data/json/mostplayedgound.json';
+import seasonmatches from '@/assets/data/mostplayedgound.json';
 import Api from '@/app/Api';
 
 export default {
-  name: 'Main',
+  name: 'mpg',
   data() {
     return {
       d:''
