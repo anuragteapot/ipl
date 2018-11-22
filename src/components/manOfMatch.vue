@@ -1,6 +1,6 @@
 <template>
   <div class="submain">
-    <b-row class="justify-content-md-center">
+    <b-row>
       <b-col class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <div class="card">
             <div class="card-header">Number</div>
@@ -9,6 +9,10 @@
           </div>
           <div class="card-footer">Footer</div>
         </div>
+        <br>
+      </b-col>
+      <b-col class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <TotalScore />
       </b-col>
     </b-row>
   </div>
@@ -17,6 +21,7 @@
 <script>
 import Api from '@/app/Api';
 import seasonmatches from '@/assets/data/json/manOfMatch.json';
+import TotalScore from '@/components/TotalScore.vue'
 
 export default {
   name: 'manOfMatch',
@@ -24,6 +29,9 @@ export default {
     return {
       d:''
     }
+  },
+  components: {
+    TotalScore
   },
   props: {
     msg:{

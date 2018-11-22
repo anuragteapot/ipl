@@ -5,7 +5,7 @@
         "name": "RP",
         "children": [
         {
-            "name": "Batsman Hits",
+            "name": "Hits",
             "children": [
             {
                 "name": "Boundries",
@@ -20,7 +20,7 @@
                 }]
             },
             {
-                "name": "Non Boundries",
+                "name": "Run",
                 "children": [
                 {
                     "name": "1",
@@ -69,7 +69,7 @@
         "name": "PW",
         "children": [
         {
-            "name": "Batsman Hits",
+            "name": "Hits",
             "children": [
             {
                 "name": "Boundries",
@@ -84,7 +84,7 @@
                 }]
             },
             {
-                "name": "Non Boundries",
+                "name": "Run",
                 "children": [
                 {
                     "name": "1",
@@ -133,7 +133,7 @@
         "name": "CSK",
         "children": [
         {
-            "name": "Batsman Hits",
+            "name": "Hits",
             "children": [
             {
                 "name": "Boundries",
@@ -148,7 +148,7 @@
                 }]
             },
             {
-                "name": "Non Boundries",
+                "name": "Run",
                 "children": [
                 {
                     "name": "1",
@@ -197,7 +197,7 @@
         "name": "DD",
         "children": [
         {
-            "name": "Batsman Hits",
+            "name": "Hits",
             "children": [
             {
                 "name": "Boundries",
@@ -212,7 +212,7 @@
                 }]
             },
             {
-                "name": "Non Boundries",
+                "name": "Run",
                 "children": [
                 {
                     "name": "1",
@@ -261,7 +261,7 @@
         "name": "RR",
         "children": [
         {
-            "name": "Batsman Hits",
+            "name": "Hits",
             "children": [
             {
                 "name": "Boundries",
@@ -276,7 +276,7 @@
                 }]
             },
             {
-                "name": "Non Boundries",
+                "name": "Run",
                 "children": [
                 {
                     "name": "1",
@@ -325,7 +325,7 @@
         "name": "MI",
         "children": [
         {
-            "name": "Batsman Hits",
+            "name": "Hits",
             "children": [
             {
                 "name": "Boundries",
@@ -340,7 +340,7 @@
                 }]
             },
             {
-                "name": "Non Boundries",
+                "name": "Run",
                 "children": [
                 {
                     "name": "1",
@@ -389,7 +389,7 @@
         "name": "DC",
         "children": [
         {
-            "name": "Batsman Hits",
+            "name": "Hits",
             "children": [
             {
                 "name": "Boundries",
@@ -404,7 +404,7 @@
                 }]
             },
             {
-                "name": "Non Boundries",
+                "name": "Run",
                 "children": [
                 {
                     "name": "1",
@@ -453,7 +453,7 @@
         "name": "KKR",
         "children": [
         {
-            "name": "Batsman Hits",
+            "name": "Hits",
             "children": [
             {
                 "name": "Boundries",
@@ -468,7 +468,7 @@
                 }]
             },
             {
-                "name": "Non Boundries",
+                "name": "Run",
                 "children": [
                 {
                     "name": "1",
@@ -517,7 +517,7 @@
         "name": "SH",
         "children": [
         {
-            "name": "Batsman Hits",
+            "name": "Hits",
             "children": [
             {
                 "name": "Boundries",
@@ -532,7 +532,7 @@
                 }]
             },
             {
-                "name": "Non Boundries",
+                "name": "Run",
                 "children": [
                 {
                     "name": "1",
@@ -581,7 +581,7 @@
         "name": "KT",
         "children": [
         {
-            "name": "Batsman Hits",
+            "name": "Hits",
             "children": [
             {
                 "name": "Boundries",
@@ -596,7 +596,7 @@
                 }]
             },
             {
-                "name": "Non Boundries",
+                "name": "Run",
                 "children": [
                 {
                     "name": "1",
@@ -645,7 +645,7 @@
         "name": "KXP",
         "children": [
         {
-            "name": "Batsman Hits",
+            "name": "Hits",
             "children": [
             {
                 "name": "Boundries",
@@ -660,7 +660,7 @@
                 }]
             },
             {
-                "name": "Non Boundries",
+                "name": "Run",
                 "children": [
                 {
                     "name": "1",
@@ -709,7 +709,7 @@
         "name": "GL",
         "children": [
         {
-            "name": "Batsman Hits",
+            "name": "Hits",
             "children": [
             {
                 "name": "Boundries",
@@ -724,7 +724,7 @@
                 }]
             },
             {
-                "name": "Non Boundries",
+                "name": "Run",
                 "children": [
                 {
                     "name": "1",
@@ -773,7 +773,7 @@
         "name": "RCB",
         "children": [
         {
-            "name": "Batsman Hits",
+            "name": "Hits",
             "children": [
             {
                 "name": "Boundries",
@@ -788,7 +788,7 @@
                 }]
             },
             {
-                "name": "Non Boundries",
+                "name": "Run",
                 "children": [
                 {
                     "name": "1",

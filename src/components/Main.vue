@@ -1,6 +1,6 @@
 <template>
   <div class="submain">
-    <b-row class="justify-content-md-center">
+    <b-row>
       <b-col class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <div class="card">
             <div class="card-header">Number</div>
@@ -9,6 +9,10 @@
           </div>
           <div class="card-footer">Footer</div>
         </div>
+        <br>
+      </b-col>
+      <b-col class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <MostPlayedGround />
       </b-col>
     </b-row>
   </div>
@@ -16,6 +20,7 @@
 
 <script>
 import seasonmatches from '@/assets/data/json/seasonmatches.json';
+import MostPlayedGround from '@/components/MostPlayedGround.vue'
 import Api from '@/app/Api';
 
 export default {
@@ -24,6 +29,9 @@ export default {
     return {
       d:''
     }
+  },
+  components: {
+    MostPlayedGround
   },
   props: {
     msg:{

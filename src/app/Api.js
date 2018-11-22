@@ -64,6 +64,7 @@ class Api {
               '#6610f2',
               '#17a2b8'
             ],
+            'label': '',
             'data': chartData['data']
           }
         ]

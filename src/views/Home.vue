@@ -2,19 +2,19 @@
   <section class="main">
     <MainSection />
     <br>
-    <MostPlayedGround />
+    <WinLoss />
   </section>
 </template>
 
 <script>
 import MainSection from '@/components/Main.vue'
-import MostPlayedGround from '@/components/MostPlayedGround.vue'
+import WinLoss from '@/components/WinLoss.vue'
 
 export default {
   name: 'Home',
   components: {
     MainSection,
-    MostPlayedGround
+    WinLoss
   }
 }
 </script>

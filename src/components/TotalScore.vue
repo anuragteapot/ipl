@@ -1,17 +1,19 @@
 <template>
-  <div class="card">
-    <div class="card-header">Most Played ground</div>
-    <div class="card-body" >
-      <div class="chart-container">
-        <polar-chart :chartData="chartData()" :options="options()"></polar-chart>
+  <div class="submain">
+    <div class="card">
+      <div class="card-header">Total Score by all teams</div>
+      <div class="card-body" >
+        <div class="chart-container">
+          <bar-chart :chartData="chartData()" :options="options()"></bar-chart>
+        </div>
       </div>
+      <div class="card-footer">Total Score by all teams</div>
     </div>
-    <div class="card-footer">Most Played ground</div>
   </div>
 </template>
 
 <script>
-import seasonmatches from '@/assets/data/json/mostplayedgound.json';
+import totalRuns from '@/assets/data/json/totalRuns.json';
 import Api from '@/app/Api';
 
 export default {
@@ -36,16 +38,18 @@ export default {
         'labels':[]
       };
 
-      seasonmatches.forEach(matches => {
+      totalRuns.forEach(matches => {
         arr['data'].push(matches['total'])
-        arr['labels'].push(matches['ground'])
+        arr['labels'].push(matches['year'])
       })
 
       return arr;
     },
     chartData() {
       this.d = this.getData();
-      return Api.prepareData(this.d)['data'];
+      var data = Api.prepareData(this.d)['data'];
+      data.datasets[0].backgroundColor = 'rgba(54, 162, 235)';
+      return data;
     },
     options() {
       return Api.prepareData(this.d)['options'];
