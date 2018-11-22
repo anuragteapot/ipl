@@ -5,7 +5,8 @@
         <div class="card">
           <div class="card-header">Wins and losses each session for teams</div>
           <div class="card-body">
-            <b-form-select v-model="selected" :change="updateData"  :options="option" class="mb-3" size="sm" />
+            <label for="select">Select Teams</label>
+            <b-form-select id="select" v-model="selected" :change="updateData"  :options="option" class="mb-3" size="sm" />
             <strong>{{ selected }}</strong>
             <line-chart :chartData="chartData()" :options="options()"></line-chart>
           </div>

@@ -72,4 +72,10 @@ body,html {
   margin-top: 10px;
   margin-bottom: 50px;
 }
+.nav-link{
+  color: #20c997!important;
+}
+.active {
+  color: white!important;
+}
 </style>
