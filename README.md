@@ -3,7 +3,7 @@ Data visualizations using Vue.js
 
 
 <p align="center">
-  <img width="556" height="112" src="docs/images/1.png">
+  <img  src="docs/images/1.png">
 </p>
 
 ## Project setup
