@@ -20,6 +20,12 @@ export default {
   extends: VueCharts.Bar,
   mounted () {
     this.renderChart(this.chartData, this.options)
+  },
+  watch: {
+    data() {
+      this.$data._chart.destroy()
+      this.renderDonutChart()
+    }
   }
 }
 </script>

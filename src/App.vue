@@ -8,6 +8,9 @@
           <b-nav-item :to="{ path: '/' }" >Home</b-nav-item>
           <b-nav-item :to="{ path: '/matches' }" >Matches</b-nav-item>
         </b-navbar-nav>
+        <b-navbar-nav class="ml-auto">
+          <b-nav-item class="active" href="https://github.com/Anu1601CS/ipl" target="_blank">Github</b-nav-item>
+        </b-navbar-nav>
       </b-collapse>
     </b-navbar>
     <div class="main-container">

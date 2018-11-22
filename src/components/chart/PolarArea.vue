@@ -1,7 +1,7 @@
 <script>
 import { VueCharts  } from 'vue-chartjs'
 export default {
-  name: 'PieChart',
+  name: 'PolarArea',
   props: {
     data :{
       type: Object,
@@ -17,7 +17,7 @@ export default {
     }
   },
   mixins: [VueCharts.mixins.reactiveProp],
-  extends: VueCharts.Pie,
+  extends: VueCharts.PolarArea,
   mounted () {
     this.renderChart(this.chartData, this.options)
   },

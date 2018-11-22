@@ -9,7 +9,9 @@ import DoughnutChart from './components/chart/Doughnut'
 import Piechart from './components/chart/Pie'
 import Barchart from './components/chart/Bar'
 import HorizontalBarchart from './components/chart/HorizontalBar'
+import PolarArea from './components/chart/PolarArea'
 import SunBrust from './components/chart/SunBrust'
+
 
 // Add the plugins
 Vue.use(BootstrapVue)
@@ -26,6 +28,7 @@ Vue.component('pie-chart', Piechart)
 Vue.component('bar-chart', Barchart)
 Vue.component('horizontalbar-chart', HorizontalBarchart)
 Vue.component('sunburst-chart', SunBrust)
+Vue.component('polar-chart', PolarArea)
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
