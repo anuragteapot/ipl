@@ -1,8 +1,7 @@
 <template>
   <section class="matches">
     <FourSixes />
-    <br>
-  <Predict />
+    <Predict />
   </section>
 </template>
 
