@@ -72,7 +72,9 @@ export default {
       return this.prepareConfig(this.d['wins'],this.d['loss'])['data'];
     },
     options() {
-      return Api.prepareData(this.d)['options'];
+        var options  = Api.prepareData(this.d)['options'];
+        // options.animation = 0;
+      return options;
     },
     prepareConfig(win,loss) {
       var config = {

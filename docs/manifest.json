@@ -1,0 +1,37 @@
+{
+    "short_name": "Ipl Web App",
+    "start_url": "/#/",
+    "name": "Ipl Data",
+    "description": "An web app to visualize Ipl Data",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "192x192",
+            "type": "image/png/ico"
+        },
+        {
+            "src": "favicon.ico",
+            "sizes": "256x256",
+            "type": "image/png/ico"
+        },
+        {
+            "src": "favicon.ico",
+            "sizes": "384x384",
+            "type": "image/png/ico"
+        },
+        {
+            "src": "favicon.ico",
+            "sizes": "512x512",
+            "type": "image/png/ico"
+        },
+        {
+            "src": "favicon.ico",
+            "sizes": "144x144",
+            "type": "image/png/ico"
+        }
+    ],
+    "theme_color": "#2d3f51",
+    "background_color": "#2d3f51",
+    "display": "standalone",
+    "orientation": "portrait"
+}
