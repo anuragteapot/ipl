@@ -10,7 +10,7 @@
             <strong>{{ selected }}</strong>
             <line-chart :chartData="chartData()" :options="options()"></line-chart>
           </div>
-          <div class="card-footer">r</div>
+          <div class="card-footer"></div>
         </div>
       </b-col>
     </b-row>

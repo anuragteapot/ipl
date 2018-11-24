@@ -6,7 +6,7 @@
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
           <b-nav-item :to="{ path: '/' }" exact>Home</b-nav-item>
-          <b-nav-item :to="{ path: '/matches' }" >Top</b-nav-item>
+          <b-nav-item :to="{ path: '/matches' }" >Total</b-nav-item>
           <b-nav-item :to="{ path: '/new' }" >New</b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto">

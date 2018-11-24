@@ -9,12 +9,12 @@
               <b-col class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <label for="team1">Team 1</label>
                 <b-form-select id="team1" v-model="team1" :change="updateData"  :options="option" class="mb-3" size="sm" />
-                <strong>{{ team1 }}</strong>
+                <strong>{{ a }}</strong>
               </b-col>
               <b-col class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <label for="team2">Team 2</label>
                 <b-form-select id="team2" v-model="team2" :change="updateData"  :options="option" class="mb-3" size="sm" />
-                <strong>{{ team2 }}</strong>
+                <strong>{{ b }}</strong>
               </b-col>
             </b-row>
             <pie-chart :chartData="chartData()" :options="options()"></pie-chart>
@@ -34,18 +34,22 @@ export default {
   name: 'predict',
   data () {
     return {
-      team1: 'Mumbai Indians',
-      team2: 'Chennai Super Kings',
+      team1: '1',
+      team2: '3',
+      a:'',
+      b:'',
       option: [
-        { value: 'Mumbai Indians', text: 'Mumbai Indians' },
-        { value: 'Kolkata Knight Riders', text: 'Kolkata Knight Riders' },
-        { value: 'Chennai Super Kings', text: 'Chennai Super Kings' },
-        { value: 'Rajasthan Royals', text: 'Rajasthan Royals' },
-        { value: 'Delhi Daredevils', text: 'Delhi Daredevils' },
-        { value: 'Kings XI Punjab', text: 'Kings XI Punjab' },
-        { value: 'Sunrisers Hyderabad', text: 'Sunrisers Hyderabad' },
-        { value: 'Kings XI Punjab', text: 'Kings XI Punjab' },
-        { value: 'Sunrisers Hyderabad', text: 'Sunrisers Hyderabad' },
+        {value:"1",text:"Kolkata Knight Riders"},
+        {value:"3",text:"Chennai Super Kings"},
+        {value:"4",text:"Kings XI Punjab"},
+        {value:"5",text:"Rajasthan Royals"},
+        {value:"6",text:"Delhi Daredevils"},
+        {value:"7",text:"Mumbai Indians"},
+        {value:"8",text:"Deccan Chargers"},
+        {value:"10",text:"Pune Warriors"},
+        {value:"11",text:"Sunrisers Hyderabad"},
+        {value:"12",text:"Rising Pune Supergiants"},
+        {value:"13",text:"Gujarat Lions"}
       ]
     }
   },
@@ -82,8 +86,21 @@ export default {
 
       arr['data'].push(countA);
       arr['data'].push(countB);
-      arr['labels'].push(this.team1);
-      arr['labels'].push(this.team2);
+
+      this.option.forEach((team) => {
+        if(this.team1 == team['value'])
+        {
+          this.a = team['text'];
+        }
+
+        if(this.team2 == team['value'])
+        {
+          this.b = team['text'];
+        }
+      })
+
+      arr['labels'].push(this.a);
+      arr['labels'].push(this.b);
 
       return arr;
     },

@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Description" content="IPL Data Visualization">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="theme-color" content="#28a745" />
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <link rel="manifest" href="manifest.json">
-    <title>ipl</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but ipl doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-    <script src="upup.min.js"></script>
-    <script src="upup.sw.min.js"></script>
-    <script>
-    // UpUp.start({
-    //     'content-url': 'index.html', // show this page to offline users
-    //     'assets': ['js/app.074603ce.js', 'js/chunk-2ab2e2c9.7b45360e.js','js/chunk-660cf9d6.e31e0994.js', 'js/chunk-vendors.564704bf.js', 'css/app.987fc2c2.css', 'css/chunk-2ab2e2c9.2b76e4f9.css','css/chunk-vendors.a2b22952.css']
-    //
-    // });
-    </script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="Description" content="IPL Data Visualization">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="theme-color" content="#28a745" />
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <title>ipl</title>
+</head>
+<body>
+  <noscript>
+    <strong>We're sorry but ipl doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+  <script src="upup.min.js"></script>
+  <script src="upup.sw.min.js"></script>
+  <script>
+  // UpUp.start({
+  //     'content-url': 'index.html', // show this page to offline users
+  //     'assets': ['js/app.074603ce.js', 'js/chunk-2ab2e2c9.7b45360e.js','js/chunk-660cf9d6.e31e0994.js', 'js/chunk-vendors.564704bf.js', 'css/app.987fc2c2.css', 'css/chunk-2ab2e2c9.2b76e4f9.css','css/chunk-vendors.a2b22952.css']
+  //
+  // });
+
+  </script>
+  <script>
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+    .register('./sw.js')
+    .then(function() { console.log("Service Worker Registered"); });
+
+    navigator.serviceWorker.ready.then(function(registration) {
+       console.log('Service Worker Ready');
+    });
+  }
+</script>
+
+</body>
 </html>
