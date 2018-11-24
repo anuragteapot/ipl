@@ -25,12 +25,13 @@ self.addEventListener('install', e => {
       return cache.addAll([
         `/`,
         `/index.html`,
-        `/styles/main.css`,
-        `/scripts/main.min.js`,
-        `/scripts/comlink.global.js`,
-        `/scripts/messagechanneladapter.global.js`,
-        `/scripts/pwacompat.min.js`,
-        `/sounds/airhorn.mp3`
+        `/js/app.c375c457.js`,
+        `/js/chunk-3ff2cfae.2163f870.js`,
+        `/js/chunk-2827e64c.3bb76819.js`,
+        `/js/chunk-vendors.564704bf.js`,
+        `/css/app.867ceaf2.css`,
+        `/css/chunk-vendors.a2b22952.css`,
+        '/favicon.ico'
       ])
           .then(() => self.skipWaiting());
     })
