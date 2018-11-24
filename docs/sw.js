@@ -33,7 +33,7 @@ self.addEventListener('install', e => {
         `./js/chunk-5663f139.b6167121.js`,
         `./js/chunk-733aa8d7.fe7cdb37.js`,
         `./js/chunk-vendors.564704bf.js`,
-        'favicon.ico'
+        './favicon.ico'
       ])
           .then(() => self.skipWaiting());
     })
