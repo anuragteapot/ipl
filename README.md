@@ -3,6 +3,8 @@ Data visualizations using Vue.js
 
 A web app to visualise IPL data across all seasons with kaggle dataset. 
 
+[DEMO](https://anu1601cs.github.io/ipl/#/).
+
 Used libraries and web frameworks.
 1. `VueJs` https://vuejs.org/  Vue.js is progressive JavaScript framework. Easy to understand. I love this language.
 2. `Vue-Bootstrap` https://bootstrap-vue.js.org/ Bootstrap is very good in its grid system is very responsive form mobile and desktop.
