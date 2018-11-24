@@ -11,6 +11,7 @@ import Barchart from './components/chart/Bar'
 import HorizontalBarchart from './components/chart/HorizontalBar'
 import PolarArea from './components/chart/PolarArea'
 import SunBrust from './components/chart/SunBrust'
+import Status from './components/status'
 
 
 // Add the plugins
@@ -29,6 +30,7 @@ Vue.component('bar-chart', Barchart)
 Vue.component('horizontalbar-chart', HorizontalBarchart)
 Vue.component('sunburst-chart', SunBrust)
 Vue.component('polar-chart', PolarArea)
+Vue.component('status', Status)
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'

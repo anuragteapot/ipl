@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <div class="card-header">Most Played ground</div>
+    <div class="card-header">Most played ground</div>
     <div class="card-body" >
       <div class="chart-container">
         <polar-chart :chartData="chartData()" :options="options()"></polar-chart>

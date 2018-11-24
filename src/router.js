@@ -12,14 +12,14 @@ export default new Router({
       component: Home
     },
     {
-      path: '/matches',
-      name: 'matches',
-      component: () => import('./views/Matches.vue')
+      path: '/total',
+      name: 'total',
+      component: () => import('./views/Total.vue')
     },
     {
-      path: '/new',
-      name: 'new',
-      component: () => import('./views/New.vue')
+      path: '/max',
+      name: 'max',
+      component: () => import('./views/Max.vue')
     },
     {
       path: "*",
