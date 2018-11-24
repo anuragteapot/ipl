@@ -31,6 +31,10 @@
   "wins": 2,
   "losses": 12
 }, {
+ "team": "Sunrisers Hyderabad",
+ "wins": 0,
+ "losses": 0
+}, {
   "team": "Delhi Daredevils",
   "wins": 10,
   "losses": 5
@@ -63,6 +67,10 @@
   "wins": 3,
   "losses": 10
 }, {
+ "team": "Sunrisers Hyderabad",
+ "wins": 0,
+ "losses": 0
+}, {
   "team": "Mumbai Indians",
   "wins": 11,
   "losses": 5
@@ -94,6 +102,10 @@
   "team": "Kings XI Punjab",
   "wins": 4,
   "losses": 10
+}, {
+ "team": "Sunrisers Hyderabad",
+ "wins": 0,
+ "losses": 0
 }, {
   "team": "Chennai Super Kings",
   "wins": 11,
@@ -135,6 +147,10 @@
   "wins": 4,
   "losses": 10
 }, {
+ "team": "Sunrisers Hyderabad",
+ "wins": 0,
+ "losses": 0
+}, {
   "team": "Kolkata Knight Riders",
   "wins": 12,
   "losses": 5
@@ -170,6 +186,10 @@
   "team": "Pune Warriors",
   "wins": 4,
   "losses": 12
+}, {
+ "team": "Sunrisers Hyderabad",
+ "wins": 0,
+ "losses": 0
 }, {
   "team": "Mumbai Indians",
   "wins": 13,

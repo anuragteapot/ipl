@@ -34,8 +34,6 @@ export default {
         { value: 'Delhi Daredevils', text: 'Delhi Daredevils' },
         { value: 'Kings XI Punjab', text: 'Kings XI Punjab' },
         { value: 'Sunrisers Hyderabad', text: 'Sunrisers Hyderabad' },
-        { value: 'Kings XI Punjab', text: 'Kings XI Punjab' },
-        { value: 'Sunrisers Hyderabad', text: 'Sunrisers Hyderabad' },
       ]
     }
   },
