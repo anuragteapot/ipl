@@ -24,14 +24,14 @@ self.addEventListener('install', e => {
     caches.open(cacheName).then(cache => {
       return cache.addAll([
         `/`,
-        `/index.html`,
-        `/js/app.c375c457.js`,
-        `/js/chunk-3ff2cfae.2163f870.js`,
-        `/js/chunk-2827e64c.3bb76819.js`,
-        `/js/chunk-vendors.564704bf.js`,
-        `/css/app.867ceaf2.css`,
-        `/css/chunk-vendors.a2b22952.css`,
-        '/favicon.ico'
+        `./index.html`,
+        `./js/app.c375c457.js`,
+        `./js/chunk-3ff2cfae.2163f870.js`,
+        `./js/chunk-2827e64c.3bb76819.js`,
+        `./js/chunk-vendors.564704bf.js`,
+        `./css/app.867ceaf2.css`,
+        `./css/chunk-vendors.a2b22952.css`,
+        './favicon.ico'
       ])
           .then(() => self.skipWaiting());
     })
