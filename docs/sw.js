@@ -23,7 +23,7 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
       return cache.addAll([
-        `/`,
+        `./`,
         `./index.html`,
         `./js/app.c375c457.js`,
         `./js/chunk-3ff2cfae.2163f870.js`,
