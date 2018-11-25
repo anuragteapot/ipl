@@ -1,7 +1,7 @@
 # IPL Data Visualization
 Data visualizations using Vue.js
 
-A web app to visualise IPL data across all seasons with kaggle dataset. 
+A web app to visualise IPL data across all seasons with kaggle [dataset.](https://www.kaggle.com/harsha547/indian-premier-league-csv-dataset).
 
 [DEMO](https://anu1601cs.github.io/ipl/#/).
 
