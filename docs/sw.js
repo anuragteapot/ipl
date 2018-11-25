@@ -25,13 +25,13 @@ self.addEventListener('install', e => {
       return cache.addAll([
         `./`,
         `./index.html`,
-        `./css/app.3755a10c.css`,
+        `./css/app.576d1cf7.css`,
+        `./css/chunk-1e5bd7f6.af78d8a6.css`,
         `./css/chunk-733aa8d7.c6c9418b.css`,
-        `./css/chunk-5663f139.bdafdde9.css`,
         `./css/chunk-vendors.a2b22952.css`,
-        `./js/app.d9f2e2be.js`,
-        `./js/chunk-733aa8d7.d2074f39.js`,
-        `./js/chunk-5663f139.f6000e1c.js`,
+        `./js/app.a4b20497.js`,
+        `./js/chunk-1e5bd7f6.03438a4a.js`,
+        `./js/chunk-733aa8d7.35965125.js`,
         `./js/chunk-vendors.564704bf.js`,
         `./manifest.json`
       ])

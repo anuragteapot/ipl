@@ -9,6 +9,7 @@
       </div>
       <div class="card-footer"></div>
     </div>
+    <br>
   </div>
 </template>
 

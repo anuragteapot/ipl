@@ -1,12 +1,15 @@
 <template>
-  <div class="card">
-    <div class="card-header">Most played ground</div>
-    <div class="card-body" >
-      <div class="chart-container">
-        <polar-chart :chartData="chartData()" :options="options()"></polar-chart>
+  <div class="submain">
+    <div class="card">
+      <div class="card-header">Most played ground</div>
+      <div class="card-body" >
+        <div class="chart-container">
+          <polar-chart :chartData="chartData()" :options="options()"></polar-chart>
+        </div>
       </div>
+      <div class="card-footer"></div>
     </div>
-    <div class="card-footer"></div>
+    <br>
   </div>
 </template>
 
