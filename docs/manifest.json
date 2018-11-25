@@ -1,10 +1,12 @@
 {
   "name": "IPL Data",
-  "short_name": "Ipl Web App",
+  "short_name": "IPL App",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
-  "display": "browser",
+  "display": "standalone",
   "start_url": "/#/",
+  "orientation": "portrait",
+  "description": "An app to visualize Ipl Data",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
