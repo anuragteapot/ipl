@@ -10,6 +10,10 @@ class Api {
 
   }
 
+  isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  }
+
   /**
   * Get avg of array.
   * @returns {number}
@@ -69,7 +73,12 @@ class Api {
           }
         ]
       },
-      'options':{responsive: true, maintainAspectRatio: false}
+      'options':{responsive: true, maintainAspectRatio: false }
+    }
+
+    if((typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1))
+    {
+      arr.options.animation = false;
     }
 
     return arr;
