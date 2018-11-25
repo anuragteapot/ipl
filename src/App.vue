@@ -5,9 +5,9 @@
       <b-navbar-brand href="#">IPL Data</b-navbar-brand>
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
-          <b-nav-item :to="{ path: '/' }" exact>Home</b-nav-item>
-          <b-nav-item :to="{ path: '/total' }" >Total</b-nav-item>
-          <b-nav-item :to="{ path: '/max' }" >Max</b-nav-item>
+          <b-nav-item v-on:click.stop.prevent :to="{ path: '/' }" exact>Home</b-nav-item>
+          <b-nav-item v-on:click.stop.prevent :to="{ path: '/total' }" >Total</b-nav-item>
+          <b-nav-item v-on:click.stop.prevent :to="{ path: '/max' }" >Max</b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto">
           <b-nav-item class="active" href="https://github.com/Anu1601CS/ipl" target="_blank">Github</b-nav-item>
