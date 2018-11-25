@@ -1,19 +1,19 @@
 <template>
   <section class="matches">
-    <ManOfMatch />
+    <FourSixes />
     <Matches />
   </section>
 </template>
 
 <script>
-import ManOfMatch from '@/components/ManOfMatch.vue'
 import Matches from '@/components/Matches.vue'
+import FourSixes from '@/components/FourSixes.vue'
 
 export default {
   name: 'Home',
   components: {
     Matches,
-    ManOfMatch
+    FourSixes,
   }
 }
 </script>
