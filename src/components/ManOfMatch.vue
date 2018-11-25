@@ -1,18 +1,18 @@
 <template>
-  <div class="submain">
-    <b-row>
+  <div class="about">
+    <b-row >
       <b-col class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <div class="card">
-          <div class="card-header">Total sixes and fours across each season</div>
+          <div class="card-header">Top players in man of the matches</div>
           <div class="card-body">
-            <line-chart :chartData="chartData()" :options="options()"></line-chart>
+            <doughnut-chart :chartData="chartData()" :options="options()"></doughnut-chart>
           </div>
           <div class="card-footer"></div>
         </div>
         <br>
       </b-col>
       <b-col class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <TotalScore />
+        <MaxMin />
       </b-col>
     </b-row>
   </div>
@@ -20,78 +20,52 @@
 
 <script>
 import Api from '@/app/Api';
-import TotalScore from '@/components/TotalScore.vue'
-import foursSixes from '@/assets/data/foursSixes.json';
+import manOfMatch from '@/assets/data/manOfMatch.json';
+import MaxMin from '@/components/MaxMin.vue';
 
 export default {
-  name: 'foursSixes',
-  data () {
+  name: 'manOfMatch',
+  data() {
     return {
+      d:''
     }
   },
-  components:{
-    TotalScore,
+  components: {
+    MaxMin
   },
-  mounted() {
-
-  },
-  computed: {
-    updateData() {
-      this.chartData();
-      return true;
+  props: {
+    msg:{
+      type: String
+    },
+    name:{
+      type: String
     }
   },
-  methods: {
+  methods:{
     getData() {
       var arr = {
         'data':[],
-        'labels':[],
-        'sixes':[],
-        'fours':[]
+        'labels':[]
       };
 
-      foursSixes.forEach(matches => {
-        arr['sixes'].push(matches['sixes'])
-        arr['fours'].push(matches['fours'])
+      manOfMatch.forEach(matches => {
+        arr['data'].push(matches['total'])
+        arr['labels'].push(matches['labels'])
       })
 
       return arr;
     },
     chartData() {
       this.d = this.getData();
-      return this.prepareConfig(this.d['sixes'],this.d['fours'])['data'];
+      return Api.prepareData(this.d)['data'];
     },
     options() {
       return Api.prepareData(this.d)['options'];
-    },
-    prepareConfig(sixes,fours) {
-      var config = {
-        type: 'line',
-        data: {
-          labels: [2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016],
-          datasets: [{
-            label: 'Sixes',
-            backgroundColor:"#007bff",
-            borderColor: "#007bff",
-            data: sixes,
-            fill: false,
-          }, {
-            label: 'Fours',
-            fill: false,
-            backgroundColor: "#70FFA0",
-            borderColor: "#70FFA0",
-            data: fours
-          }]
-        }
-      }
-
-      return config;
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 
 </style>

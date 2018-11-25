@@ -26,12 +26,12 @@ self.addEventListener('install', e => {
         `./`,
         `./index.html`,
         `./css/app.576d1cf7.css`,
-        `./css/chunk-1e5bd7f6.af78d8a6.css`,
-        `./css/chunk-733aa8d7.c6c9418b.css`,
+        `./css/chunk-20df745b.4649ed79.css`,
+        `./css/chunk-f1ac9728.e0936b69.css`,
         `./css/chunk-vendors.a2b22952.css`,
-        `./js/app.a4b20497.js`,
-        `./js/chunk-1e5bd7f6.03438a4a.js`,
-        `./js/chunk-733aa8d7.35965125.js`,
+        `./js/app.15e23fd2.js`,
+        `./js/chunk-20df745b.c446a9ba.js`,
+        `./js/chunk-f1ac9728.c325d7e9.js`,
         `./js/chunk-vendors.564704bf.js`,
         `./manifest.json`
       ])
