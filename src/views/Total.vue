@@ -1,6 +1,7 @@
 <template>
   <section class="matches">
     <ManOfMatch />
+    <br>
     <Matches />
   </section>
 </template>
