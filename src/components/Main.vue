@@ -3,7 +3,7 @@
     <b-row>
       <b-col class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <div class="card">
-            <div class="card-header">Number of matches played across each season</div>
+          <div class="card-header">Number of matches played across each season</div>
           <div class="card-body">
             <bar-chart :chartData="chartData()" :options="options()"></bar-chart>
           </div>

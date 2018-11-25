@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="fourSixes">
     <b-row >
       <b-col class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <div class="card">
@@ -24,7 +24,7 @@ import manOfMatch from '@/assets/data/manOfMatch.json';
 import MaxMin from '@/components/MaxMin.vue';
 
 export default {
-  name: 'manOfMatch',
+  name: 'fourSixes',
   data() {
     return {
       d:''
