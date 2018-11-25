@@ -1,7 +1,6 @@
 <template>
   <section class="main">
     <MainSection />
-    <br>
     <WinLoss />
   </section>
 </template>

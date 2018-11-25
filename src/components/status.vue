@@ -30,6 +30,8 @@ export default {
   mounted: function() {
     const vm = this;
     window.addEventListener('load', function() {
+      window.addEventListener('online', vm.updateOnlineStatus);
+      window.addEventListener('offline', vm.updateOnlineStatus);
       window.setInterval(function() {
         vm.updateOnlineStatus();
         window.addEventListener('online', vm.updateOnlineStatus);
