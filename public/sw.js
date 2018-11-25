@@ -23,16 +23,16 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
       return cache.addAll([
-        `./`,
-        `./index.html`,
-        `./css/app.3755a10c.css`,
-        `./css/chunk-733aa8d7.c6c9418b.css`,
-        `./css/chunk-5663f139.2777c53f.css`,
-        `./css/chunk-vendors.a2b22952.css`,
-        `./js/app.b614a3d7.js`,
-        `./js/chunk-733aa8d7.f5db3f3e.js`,
-        `./js/chunk-5663f139.afd475e0.js`,
-        `./js/chunk-vendors.564704bf.js`
+        `/`,
+        `/index.html`,
+        `/css/app.29f1ca7d.css`,
+        `/css/chunk-733aa8d7.c6c9418b.css`,
+        `/css/chunk-5663f139.bdafdde9.css`,
+        `/css/chunk-vendors.a2b22952.css`,
+        `/js/app.ef6b3500.js`,
+        `/js/chunk-733aa8d7.fe7cdb37.js`,
+        `/js/chunk-5663f139.b6167121.js`,
+        `/js/chunk-vendors.564704bf.js`
       ])
           .then(() => self.skipWaiting());
     })
