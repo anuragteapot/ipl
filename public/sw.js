@@ -32,7 +32,8 @@ self.addEventListener('install', e => {
         `./js/app.d74384a0.js`,
         `./js/chunk-733aa8d7.d2074f39.js`,
         `./js/chunk-5663f139.82db9adf.js`,
-        `./js/chunk-vendors.564704bf.js`
+        `./js/chunk-vendors.564704bf.js`,
+        `./manifest.json`
       ])
           .then(() => self.skipWaiting());
     })
