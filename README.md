@@ -22,7 +22,8 @@ I worked on these things for better user experience.
  
    1. **Web app in `vue.js`**. Vue.js is progressive JavaScript framework. Easy to understand.
    2. **Optimised load time** : No data and HTTP request' redundant in application. See image given below.
-   3. **Make it mobile responsive** : Bootstrap is used we know how it is good in its grid system and vue-chartjs.
+   3. **Make it mobile responsive** : Bootstrap is used we know how it is good in its grid system and vue-chartjs .
+   **Off Animation if mobile detected** for fast and smooth experience.
    4. **Progressive web-app** : Tested on chrome Audits. Add few things like `manifest.json` , `sw.js` background theme, theme color, site is served over HTTPS for progressive web-app , add to Home screen etc. See image given below.
    5. **Make it offline usable** :  I used `Air Horner (sw.js)` to provide offilne service.
    Scripts loaded offline from serviceWorker and also add offline and online status in top right corner of web app.
