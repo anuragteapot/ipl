@@ -3,9 +3,7 @@
   "short_name": "IPL App",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
-  "display": "standalone",
-  "start_url": "/#/",
-  "orientation": "portrait",
+  "start_url": "/ipl/#/",
   "description": "An app to visualize Ipl Data",
   "icons": [
     {
@@ -49,5 +47,6 @@
       "type": "image/png"
     }
   ],
-  "splash_pages": null
+  "display": "standalone",
+  "orientation": "portrait",
 }
